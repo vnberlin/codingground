@@ -37,17 +37,17 @@ class Queue:
         if self.instack.isEmpty() and self.outstack.isEmpty():
             print "queue empty"
         elif self.outstack.isEmpty() and not(self.instack.isEmpty()):
-            #print "t2-a"
             while(not self.instack.isEmpty()):
                 self.outstack.push(self.instack.pop())
-            
             return self.outstack.pop()
         else:
-            #print "t2-b"
             return self.outstack.pop()
             
     def __private_order_queue(self):
         pass
+        # its possible to use both stacks more efficiently to use memory more efficiently
+        # it can allow you queue more double the data eg q = Queue(5) can queue 10 items
+        # if you move line 40 and 41 here and call this private method from dequeue method
     
 def main():
     q = Queue(5)
