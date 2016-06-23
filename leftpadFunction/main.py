@@ -1,4 +1,14 @@
 # leftpad function
+# In March 2016 a programmer got pissed off at guys at NPM (nodejs) and kik.com
+# over a package naming issue that kik.com handled piss poorly and took matter
+# to NPM directly, NPM sided with the big company bullying the open source guy.
+# The programmer subsequently unpublished all his packages from NPM resulting
+# tones of code that stopped functioning. You might think it was a large piece
+# of code that achieved this, nope just 10 line of nodejs that did leftpadding
+# Here is a Python version of a simple left padding function lines.
+
+#http://www.sciencealert.com/how-a-programmer-almost-broke-the-internet-by-deleting-11-lines-of-code
+
 def leftpad(str_, pad, ch):
     a = list(str_)
     length = len(a)
